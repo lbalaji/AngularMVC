@@ -1,0 +1,70 @@
+﻿<div class="row">
+    <div class="col-md-1">
+        &nbsp;
+    </div>
+    <span class="col-md-1" style="font-weight:bold">Search</span>
+    <span class="col-md-3">
+        <input type="text" class="form-control ng-pristine ng-valid" ng-model="searchKeyword">
+    </span>
+    <div class="col-md-6 text-right">
+        <input type="button" value="Add" class="btn btn-default" ng-click="add()">
+    </div>
+    <div class="col-md-1">
+        &nbsp;
+    </div>
+</div>
+<p></p> 
+<div class="row">
+    <div class="col-md-1">
+        &nbsp;
+    </div>
+    <div class="col-md-10 table-responsive">
+        <table class="table table-striped table-bordered table-hover table-responsive">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Name</th>
+                    <th>Number 1</th>
+                    <th>Operation</th>
+                    <th>Number 2</th>
+                    <th>Result</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr data-ng-repeat="calculation in calculations | filter:searchKeyword">
+                    <td>
+                        {{ $index + 1}}
+                    </td>
+                    <td>
+                        {{ calculation.name }}
+                    </td>
+                    <td>
+                        {{ calculation.number1 }}
+                    </td>
+                    <td>
+                        <div ng-if="calculation.operationType == 0">+</div>
+                        <div ng-if="calculation.operationType == 1">-</div>
+                        <div ng-if="calculation.operationType == 2">/</div>
+                    </td>
+                    <td>
+                        {{ calculation.number2 }}
+                    </td>
+                    <td>
+                        {{ calculation.result }}
+                    </td>
+                    <td>
+                        <input type="button" class="btn btn-primary" value="Edit" ng-click="edit(calculation.id)" text="Edit">
+                    </td>
+                    <td>
+                        <input type="button" class="btn btn-danger" value="Delete" ng-click="delete(calculation.id)" text="Delete">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="col-md-1">
+        &nbsp;
+    </div>
+</div>
