@@ -1,14 +1,32 @@
 ﻿<form class="form-login" role="form">
     <h2 class="form-login-heading">Login</h2>
-    <input type="text" class="form-control" placeholder="Username" data-ng-model="loginData.userName" required autofocus>
-    <input type="password" class="form-control" placeholder="Password" data-ng-model="loginData.password" required>
+   
+     
+        <input type="text" class="form-control" placeholder="Username" data-ng-model="loginData.userName" required autofocus>
+        <input type="password" class="form-control" placeholder="Password" data-ng-model="loginData.password" required>
     <div class="checkbox">
         <label>
             <input type="checkbox" data-ng-model="loginData.useRefreshTokens"><strong> Use Refresh Tokens</strong>
         </label>
     </div>
-    <button class="btn btn-lg btn-info btn-block" type="submit" data-ng-click="login()">Login</button>
-    <div data-ng-hide="message == ''" class="alert alert-danger">
-        {{message}}
+    <div class="checkbox">
+        <div class="row">
+            <label>
+                <input type="radio"
+                       placeholder="Db" data-ng-value="0" data-ng-model="loginData.dbType">
+                <strong>Sql Server</strong>
+            </label>
+        </div>
+        <div class="row">
+            <label>
+                <input type="radio"
+                       placeholder="Db" data-ng-value="1" data-ng-model="loginData.dbType">
+                <strong>Mongo DB</strong>
+            </label>
+        </div>
     </div>
+        <button class="btn btn-lg btn-info btn-block" type="submit" data-ng-click="login()">Login</button>
+        <div data-ng-hide="message == ''" class="alert alert-danger">
+            {{message}}
+        </div>
 </form>

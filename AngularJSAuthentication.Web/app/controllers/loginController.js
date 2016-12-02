@@ -4,7 +4,8 @@ app.controller('loginController', ['$scope', '$location', 'authService', functio
     $scope.loginData = {
         userName: "",
         password: "",
-        useRefreshTokens: false
+        useRefreshTokens: false,
+        dbType:0
     };
 
     $scope.message = "";

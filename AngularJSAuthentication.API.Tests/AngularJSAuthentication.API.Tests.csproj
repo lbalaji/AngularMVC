@@ -70,6 +70,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="CalculatorControllerTest.cs" />
+    <Compile Include="MathsHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

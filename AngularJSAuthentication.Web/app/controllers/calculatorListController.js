@@ -8,8 +8,8 @@ app.controller('calculatorListController', ['$scope', '$location','$window', 'ca
             console.log("Calculation entry");
             $scope.calculations = results.data;
 
-        }, function (error) {
-             alert(error.data.message);
+        }, function (error) { 
+            // alert(error.data.message);
         });
     }
 

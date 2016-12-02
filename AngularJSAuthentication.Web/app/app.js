@@ -1,5 +1,4 @@
-﻿
-var app = angular.module('AngularAuthApp', ['ngRoute', 'LocalStorageModule', 'angular-loading-bar']);
+﻿var app = angular.module('AngularAuthApp', ['ngRoute', 'LocalStorageModule', 'angular-loading-bar']);
 
 app.config(function ($routeProvider) {
 
@@ -44,8 +43,9 @@ app.config(function ($routeProvider) {
 
 });
 
-app.constant('ngAuthSettings', {
-    apiServiceBaseUri: 'http://localhost/ngauthenticationapi/',
+app.constant('ngAuthSettings', {     
+   // apiServiceBaseUri: 'http://localhost/ngauthenticationapi/',
+    apiServiceBaseUri: 'http://localhost/ngauthenticationapisql/',
     clientId: 'ngAuthApp'
 });
 
