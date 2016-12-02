@@ -23,7 +23,11 @@ o Configure connection string for both API projects
 
 Test scenario
 
--	First Signup by providing username and password for selected database you want to use
+-	 Register user
+
+<img src='http://lbalaji.github.io/images/pic_signup.PNG'>
+
+-	 Login by providing username and password for selected database you want to use
 
 <img src='http://lbalaji.github.io/images/pic_log.PNG'>
 
