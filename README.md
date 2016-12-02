@@ -1,6 +1,9 @@
 AngularJS Authentication / MVC Web API  
 =======================
  
+  
+Solution information
+---------
 There are 4 projects included in this repo
 
 1. Web- Api using Mongo as DB -http://localhost/ngauthenticationapi/
@@ -13,14 +16,21 @@ There are 4 projects included in this repo
 
 
 Pre-requests
- 	
+ -----------	
 o MongoDB and SQL server, IIS installed and configured 
 	
 o Configure connection string for both API projects
  
+Objective
+---------
+1. Implemente login feature using MVC Web API
+2. Saving Login details into DB
+3. Angular created for Register and Login process
+4. Calculated value saved into DB using CURD
+5. Search facility
 
-
-Test scenario
+Testing process 
+--------------
 
 -	 Register user
 
@@ -45,10 +55,9 @@ Test scenario
 
 
 Things to do:
-
+---------------
 
 - Merge both MVC API projects to provide single endpoint and configure routing
-
-
+- Provide Username search
 - Filters can be added using watcher to run real time from DB
 - Write e2e/karam/jasmine testing for angular
