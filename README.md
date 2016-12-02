@@ -12,7 +12,6 @@ There are 4 projects included in this repo
 4. Test
 
 
-
 Pre-requests
  	
 o MongoDB and SQL server, IIS installed and configured 
@@ -52,4 +51,4 @@ Things to do:
 
 
 - Filters can be added using watcher to run real time from DB
-- Write e2e testing for angular
+- Write e2e/karam/jasmine testing for angular
