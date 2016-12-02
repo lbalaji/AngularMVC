@@ -32,10 +32,10 @@ Test scenario
 	o	Summary Page you can add/delete/edit existing calculations
 	
 	o	Able to filter by calculation name 
-
+<img src='http://lbalaji.github.io/images/pic_summary.PNG'>
 
 -	When you click Edit it will take you to detail page where you can  create new calculation
-
+<img src='http://lbalaji.github.io/images/pic_detail.PNG'>
 -	When you click Edit it will take you to detail page where you can change existing details and save into DB
 
 
